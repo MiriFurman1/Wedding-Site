@@ -37,13 +37,18 @@ const CountdownTimer: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <p>Countdown to Wedding:</p>
-      <div>
-        <span>{timeLeft.days} days</span>
-        <span>{timeLeft.hours} hours</span>
-        <span>{timeLeft.minutes} minutes</span>
-        <span>{timeLeft.seconds} seconds</span>
+    <div className='flex flex-col w-[600px] text-center'>
+      <div className='flex justify-around text-3xl mb-6'>
+        <span>{timeLeft.days} </span>
+        <span>{timeLeft.hours} </span>
+        <span>{timeLeft.minutes} </span>
+        <span>{timeLeft.seconds} </span>
+      </div>
+      <div className='flex justify-around text-3xl ml-6'>
+      <span> Days</span>
+        <span> Hours</span>
+        <span> Minutes</span>
+        <span> Seconds</span>
       </div>
     </div>
   );

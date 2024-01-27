@@ -4,14 +4,13 @@ import CountdownTimer from '../components/CountdownTimer';
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className='max-w-screen  min-h-screen flex justify-center'>
       <Head>
         <title>Our Wedding</title>
         <meta name="description" content="Our wedding website with countdown" />
       </Head>
 
-      <main>
-        <h1>Save the Date</h1>
+      <main className='min-h-screen'>
         <CountdownTimer />
       </main>
     </div>
